@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url("style/index.css");
+
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--pnotify-->
+    <script src="notify/pnotify.custom.js"></script>
+    <link href="notify/pnotify.custom.css" media="all" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.0.0/pnotify.min.js"></script>
+
+
+        <br>
+        <h1 align="center">Добавление товара в базу</h1>
+        <hr>
+</head>
+<body>
+<table border="0" align="center" cellpadding="10" cellspacing="5">
+    <div class="search">
+        <form action="php/new_article.php" method="POST">
+            <th>Номер склада:</th><th>
+            <select name="stock" required>
+                <option value="A01">A01</option>
+                <option value="A02">A02</option>
+                <option value="A03">A03</option>
+                <option value="B01">B01</option>
+            </select>
+        </th><tr>
+            <th>
+            Артикул:</th><th>
+            <input type="text" name="article" placeholder="123456" pattern="[0-9]{6}" required></th><tr><th>
+            Наименование:</th><th>
+            <input type="text" name="name" placeholder="LuK Подшипник ступичной опоры" pattern="^[A-Za-zА-Яа-яЁё\s]+$"></th><tr><th>
+            Стоимость:</th><th>
+            <input type="text" name="price" placeholder="1000" pattern="[0-9]+$" required></th><tr><th>
+        </th><tr>
+
+            <td colspan="2">
+                <center>
+                    <button type="submit" class="btn btn-outline-info">Добавить</button>
+                </center>
+            </td>
+        </form>
+    </div>
+</table>
+</body>
+</html>

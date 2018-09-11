@@ -1,0 +1,34 @@
+body {
+    background: #c7b39b url(images/white-monodiag.png);
+    color: #000000; /* Цвет текста */
+    font-family: "Gotham Pro Light";
+}
+h1 {
+    font-family: "Gotham Pro";
+}
+
+label{
+    color: #000000;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select{
+    width: 300px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+th {
+    font-weight: normal;
+}
+textarea{
+    resize: none;
+}

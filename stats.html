@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="c3-0.4.21/c3.css">
+</head>
+
+<style>
+    @import "style/index.css";
+    input[type=text], input[type=password] {
+        /*width: 25%;*/
+    }
+</style>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="c3-0.4.21/c3.js"></script>
+<script src="js/chart1.js"></script>
+<script src="js/chart2.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<body>
+    <br>
+    <h1 align="center">Статистика магазина</h1>
+    <hr>
+    <h2>&nbsp;1. График продаж</h2>
+    <div id="chart1"></div>
+    <h2>&nbsp;2. Процент выполнения плана</h2>
+
+    <table align="center" cellpadding="10" cellspacing="5">
+        <tr>
+            <td width="200">
+                Введите месячный план в рублях:
+            </td>
+            <td>
+                <input placeholder="100000" type="text" id="plan" pattern="[0-9]+$" required>
+            </td>
+            <td>
+                <button type="submit" class="btn btn-secondary btn-lg" onclick="test()">Рассчитать</button>
+            </td>
+        </tr>
+    </table>
+    <div id="chart2"></div>
+
+</body>
+</html>

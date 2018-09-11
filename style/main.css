@@ -1,0 +1,33 @@
+body{
+    background: #c7b39b url(images/white-monodiag.png);
+}
+.centerv{
+    width: 40%; /* Ширина элемента в пикселах */
+    padding: 30px; /* Поля вокруг текста */
+    margin-top: 10%;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+h1 {
+     font-size: 400%;
+     font-family: "Gotham Pro Black";
+     text-decoration: none;
+     color: #ffffff;
+ }
+
+h2 {
+    font-size: 200%;
+    font-family: "Gotham Pro Black";
+    text-decoration: none;
+    color: #ffffff;
+}
+label{
+    color: #ffffff;
+}
+input{
+    width: 100%;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

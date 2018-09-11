@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url("style/index.css");
+    </style>
+    <script src="notify/pnotify.custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="notify/pnotify.custom.css" media="all" rel="stylesheet" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.0.0/pnotify.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+<script>
+    $(function(){
+        new PNotify({
+            title: 'Успешно!',
+            text: 'Товар успешно добавлен в базу.',
+            type: 'success'
+        });
+    });
+</script>
+<br>
+<br>
+    <center>
+        <table border="0" align="center" cellpadding="20" cellspacing="5">
+        <tr>
+            <td>
+                <button type="button" onclick="location.href='register.html'" class="btn btn-secondary btn-lg">Новый заказ</button>
+            </td>
+            <td>
+                <button type="button" onclick="location.href='info.html'" class="btn btn-secondary btn-lg">На главную</button>
+            </td>
+            <td>
+                <button type="button" onclick="window.open('https://docs.google.com/document/d/1Nbuz95Zso-VhvpwP89Vm-Vh5iRr6K8ezJaHG-i8xDXU/edit?usp=sharing');" class="btn btn-secondary btn-lg">Экспорт в Word</button>
+            </td>
+        </tr>
+
+        </table>
+    </center>
+</body>
+</html>
