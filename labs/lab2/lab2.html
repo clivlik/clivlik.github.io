@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<IMG SRC="map.png" BORDER="0"
+USEMAP="#russia">
+<MAP NAME="russia">
+<AREA SHAPE="rect" COORDS="9,11,230,142" Title = "Яндекс" HREF = "https://ya.ru/"
+onMouseOver="showLayer('link1');"onMouseOut="hideLayer('link1');"> 
+<AREA SHAPE="rect" COORDS="238,11,459,142" Title = "Youtube"  HREF = "https://youtube.com/"
+onMouseOver="showLayer('link2');" onMouseOut="hideLayer('link2');">
+<AREA SHAPE="rect" COORDS="9,150,230,281" Title = "Gmail" HREF = "https://gmail.com/"
+ onMouseOver="showLayer('link3');" onMouseOut="hideLayer('link3');">
+<AREA SHAPE="rect" COORDS="239,149,460,280" Title = "Trello" HREF = "https://trello.com/"
+ onMouseOver="showLayer('link4');" onMouseOut="hideLayer('link4');">
+</MAP>
+<br>
+<br>
+<br>
+<IMG SRC="car.png" WIDTH="250">
+<IMG SRC="car.png" WIDTH="250" style = "filter: saturate(8);">
+<IMG SRC="car.png" WIDTH="250" style = "filter: grayscale(1);">
+<IMG SRC="car.png" WIDTH="250" style = "filter: blur(2px);">
+<IMG SRC="car.png" WIDTH="250" style = "filter: contrast(7);">
+	
+<STYLE TYPE="text/css">
+<!--
+#sloj
+{ position: absolute; left:60px; top: 390px; visibility: visible ;z-index=1; }
+	 .light {
+    text-shadow: #FFFFFF 0 0 2px  ; /* Свечение голубого цвета */
+    color: #FFFFFF;
+		 font-family: sans-serif;
+   }
+//-->
+</STYLE>
+<DIV ID='sloj' class = "light"><font size=+2 > Автомобиль </DIV>
+
+</body>
+</html>
