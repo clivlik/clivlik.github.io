@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="yandex-verification" content="2393ae162ee5c086" />
+	<script>
+      //Строки для поиска
+    UrlYandex="http://www.yandex.ru/yandsearch?rpt=rad&text=";
+    UrlGoogle="http://www.google.ru/search?hl=ru&newwindow=1&q=";
+    Urlmail_ru="http://go.mail.ru/search?fm=1&rf=e.mail.ru&q=";
+	Urlrambler="https://nova.rambler.ru/search?utm_source=head&utm_campaign=self_promo&utm_medium=enter&utm_content=search&_openstat=UmFtYmxlcl9NYWluOzs7&query="
+	Urlyahoo="https://search.yahoo.com/search?p="
+	Urlwolf="https://www.wolframalpha.com/input/?i="
+	Urlwiki="https://ru.wikipedia.org/w/index.php?search="
+	Urlbing="https://www.bing.com/search?q="
+	Urlask="https://www.ask.com/web?q="
+	Urlaol="https://search.aol.com/aol/search?s_chn=prt_bon&q="
+	Urlduck="https://duckduckgo.com/?q="
+	Urlex="http://msxml.excite.com/search/web?fcoid=417&fcop=topnav&fpid=2&om_nextpage=True&q="
+	Urlmirea="https://www.mirea.ru/search/index.php?s=&q="
+	function FindText(Url){
+        var FullUrl=Url+document.find.searchtext.value;
+         //Проверяем установлен ли флажок
+         if (document.find.newwin.checked){  var FindWin=window.open(FullUrl); }
+         else{ location.href = FullUrl; } }
+    </script>
+    <title>Поиск</title>
+    <style>
+        @import url("style/index.css");
+        @import url("style/menu.css");
+
+        p {
+            margin-right: 5%; /* Отступ справа */
+            margin-left: 200px;
+            font-size: 14pt;
+        }
+		
+		.fixed-box {
+    height: 60px;
+}
+.fixed-div {
+    height: 60px;
+	margin-left: 200px;
+}
+.fixed {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+		
+		.search{
+            padding: 10px; /* Поля вокруг текста */
+            margin-left: 200px; /* Выравниваем по центру */
+    		margin-right: 5%;
+        }
+    </style>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-
+9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	
+</head>
+<body>
+	
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-
+A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="banner/scroll.js"></script>
+<h1 align="center"> Поиск</h1>
+<hr>
+
+<div class="search">
+<form name = "find">
+  Найти:  <br>
+      <input type="text" name="searchtext" size=40><br>
+      <input type="checkbox" name="newwin">Открыть в новом окне<br>
+      <br>С помощью поисковой системы:<br >
+      <input type="button" value="Yandex"
+        onClick="FindText(UrlYandex)">
+      <input type="button" value="Google"
+        onClick="FindText(UrlGoogle)">
+	  <input type="button" value="Mail"
+        onClick="FindText(Urlmail_ru)">
+	  <input type="button" value="Rambler"
+        onClick="FindText(Urlrambler)">
+	<input type="button" value="Yahoo"
+        onClick="FindText(Urlyahoo)">
+	<input type="button" value="Wolfram|Alpha"
+        onClick="FindText(Urlwolf)">
+	<input type="button" value="Wikipedia"
+        onClick="FindText(Urlwiki)">
+	<input type="button" value="Bing"
+        onClick="FindText(Urlbing)">
+	<input type="button" value="Ask.com"
+        onClick="FindText(Urlask)">
+	<input type="button" value="AOL"
+        onClick="FindText(Urlaol)">
+	<input type="button" value="Duck"
+        onClick="FindText(Urlduck)">
+	<input type="button" value="Excite"
+        onClick="FindText(Urlex)">
+	<input type="button" value="Сайт РТУ МИРЭА"
+        onClick="FindText(Urlmirea)">
+	
+	
+	
+	
+</form>
+</div>
+<br></body>
+</html>
+
